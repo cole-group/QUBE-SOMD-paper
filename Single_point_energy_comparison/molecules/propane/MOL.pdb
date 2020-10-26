@@ -1,0 +1,28 @@
+REMARK   0 Title: BOSS Z-Matrix                                                  
+REMARK   1 Creator: XChemEdit/AUTOZMAT                                           
+REMARK   2 WL Jorgensen Group, Dept. of Chemistry, Yale University               
+HETATM    1  C00 MOL A   1      1.0000  1.0000  0.0000  0.00  0.00   0           
+HETATM    2  C01 MOL A   1     -0.5330  1.0000  0.0000  0.00  0.00   0           
+HETATM    3  C02 MOL A   1      1.5870  2.4160  0.0000  0.00  0.00   0           
+HETATM    4  H03 MOL A   1      1.3630  0.4560  0.8730  0.00  0.00   0           
+HETATM    5  H04 MOL A   1      1.3630  0.4560 -0.8730  0.00  0.00   0           
+HETATM    6  H05 MOL A   1     -0.9220 -0.0190 -0.0000  0.00  0.00   0           
+HETATM    7  H06 MOL A   1     -0.9280  1.5050  0.8820  0.00  0.00   0           
+HETATM    8  H07 MOL A   1     -0.9280  1.5050 -0.8820  0.00  0.00   0           
+HETATM    9  H08 MOL A   1      2.6770  2.3850  0.0000  0.00  0.00   0           
+HETATM   10  H09 MOL A   1      1.2720  2.9750  0.8820  0.00  0.00   0           
+HETATM   11  H0A MOL A   1      1.2720  2.9750 -0.8820  0.00  0.00   0           
+TER
+CONECT    1    2    3    4    5    0    0    0    0    0    0                    
+CONECT    2    1    6    7    8    0    0    0    0    0    0                    
+CONECT    3    1    9   10   11    0    0    0    0    0    0                    
+CONECT    4    1    0    0    0    0    0    0    0    0    0                    
+CONECT    5    1    0    0    0    0    0    0    0    0    0                    
+CONECT    6    2    0    0    0    0    0    0    0    0    0                    
+CONECT    7    2    0    0    0    0    0    0    0    0    0                    
+CONECT    8    2    0    0    0    0    0    0    0    0    0                    
+CONECT    9    3    0    0    0    0    0    0    0    0    0                    
+CONECT   10    3    0    0    0    0    0    0    0    0    0                    
+CONECT   11    3    0    0    0    0    0    0    0    0    0                    
+ENDMDL
+END

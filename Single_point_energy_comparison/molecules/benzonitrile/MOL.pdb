@@ -1,0 +1,32 @@
+REMARK   0 Title: BOSS Z-Matrix                                                  
+REMARK   1 Creator: XChemEdit/AUTOZMAT                                           
+REMARK   2 WL Jorgensen Group, Dept. of Chemistry, Yale University               
+HETATM    1  C00 MOL A   1      1.0000  1.0000  0.0000  0.00  0.00   0           
+HETATM    2  C01 MOL A   1     -0.4096  1.0000  0.0000  0.00  0.00   0           
+HETATM    3  C02 MOL A   1      1.7043 -0.2211  0.0000  0.00  0.00   0           
+HETATM    4  H03 MOL A   1      1.5421  1.9351  0.0000  0.00  0.00   0           
+HETATM    5  C04 MOL A   1     -1.1141 -0.2209 -0.0000  0.00  0.00   0           
+HETATM    6  H05 MOL A   1     -0.9503  1.9363  0.0000  0.00  0.00   0           
+HETATM    7  C06 MOL A   1     -0.4085 -1.4411 -0.0000  0.00  0.00   0           
+HETATM    8  H07 MOL A   1     -2.1950 -0.2231 -0.0000  0.00  0.00   0           
+HETATM    9  C08 MOL A   1      0.9999 -1.4407 -0.0000  0.00  0.00   0           
+HETATM   10  H09 MOL A   1     -0.9401 -2.3823 -0.0000  0.00  0.00   0           
+HETATM   11  C0A MOL A   1      1.7257 -2.6976 -0.0000  0.00  0.00   0           
+HETATM   12  H0B MOL A   1      2.7852 -0.2310  0.0000  0.00  0.00   0           
+HETATM   13  N0C MOL A   1      2.3039 -3.6989 -0.0000  0.00  0.00   0           
+TER
+CONECT    1    2    3    4    0    0    0    0    0    0    0                    
+CONECT    2    1    5    6    0    0    0    0    0    0    0                    
+CONECT    3    1    9   12    0    0    0    0    0    0    0                    
+CONECT    4    1    0    0    0    0    0    0    0    0    0                    
+CONECT    5    2    7    8    0    0    0    0    0    0    0                    
+CONECT    6    2    0    0    0    0    0    0    0    0    0                    
+CONECT    7    5    9   10    0    0    0    0    0    0    0                    
+CONECT    8    5    0    0    0    0    0    0    0    0    0                    
+CONECT    9    3    7   11    0    0    0    0    0    0    0                    
+CONECT   10    7    0    0    0    0    0    0    0    0    0                    
+CONECT   11    9   13    0    0    0    0    0    0    0    0                    
+CONECT   12    3    0    0    0    0    0    0    0    0    0                    
+CONECT   13   11    0    0    0    0    0    0    0    0    0                    
+ENDMDL
+END

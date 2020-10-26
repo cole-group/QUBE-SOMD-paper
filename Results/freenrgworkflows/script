@@ -1,0 +1,20 @@
+
+
+####python run_networkanalysis.py tests/io/summary_r1.csv --target_compound FXR45 -o blub.dat -e tests/io/ic50_exp.dat --stats --generate_notebook
+
+
+#python run_networkanalysis.py group1/G1_AMBER_summary.csv --target_compound Lig5 -o out.dat -e group1/Group1_ic50_exp.csv --stats --generate_notebook
+#mv out.dat amber-G1.dat
+#mv out.ipynb amber-G1.ipynb
+
+#python run_networkanalysis.py group1/G1_QUBE_summary.csv --target_compound Lig5 -o out.dat -e group1/Group1_ic50_exp.csv --stats --generate_notebook
+#mv out.dat qube-G1.dat
+#mv out.ipynb qube-G1.ipynb
+
+#python run_networkanalysis.py group2/G2_AMBER_summary.csv --target_compound Lig3 -o out.dat -e group2/group2_ic50_exp.csv --stats --generate_notebook
+#mv out.dat amber-G2.dat
+#mv out.ipynb amber-G2.ipynb
+
+python run_networkanalysis.py group2/G2_QUBE_summary.csv --target_compound Lig3 -o out.dat -e group2/group2_ic50_exp.csv --stats --generate_notebook
+mv out.dat qube-G2.dat
+mv out.ipynb qube-G2.ipynb

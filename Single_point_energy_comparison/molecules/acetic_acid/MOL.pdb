@@ -1,0 +1,22 @@
+REMARK   0 Title: BOSS Z-Matrix                                                  
+REMARK   1 Creator: XChemEdit/AUTOZMAT                                           
+REMARK   2 WL Jorgensen Group, Dept. of Chemistry, Yale University               
+HETATM    1  C00 MOL A   1      1.0000  1.0000  0.0000  0.00  0.00   0           
+HETATM    2  C01 MOL A   1     -0.4909  1.0000  0.0000  0.00  0.00   0           
+HETATM    3  O02 MOL A   1      1.6968  1.6018  1.0431  0.00  0.00   0           
+HETATM    4  O03 MOL A   1      1.6277  0.4541 -0.9460  0.00  0.00   0           
+HETATM    5  H04 MOL A   1     -0.8643 -0.0454  0.0000  0.00  0.00   0           
+HETATM    6  H05 MOL A   1     -0.8643  1.5233 -0.9051  0.00  0.00   0           
+HETATM    7  H06 MOL A   1     -0.8746  1.5206  0.9024  0.00  0.00   0           
+HETATM    8  H07 MOL A   1      2.7098  1.6088  1.0553  0.00  0.00   0           
+TER
+CONECT    1    2    3    4    0    0    0    0    0    0    0                    
+CONECT    2    1    5    6    7    0    0    0    0    0    0                    
+CONECT    3    1    8    0    0    0    0    0    0    0    0                    
+CONECT    4    1    0    0    0    0    0    0    0    0    0                    
+CONECT    5    2    0    0    0    0    0    0    0    0    0                    
+CONECT    6    2    0    0    0    0    0    0    0    0    0                    
+CONECT    7    2    0    0    0    0    0    0    0    0    0                    
+CONECT    8    3    0    0    0    0    0    0    0    0    0                    
+ENDMDL
+END

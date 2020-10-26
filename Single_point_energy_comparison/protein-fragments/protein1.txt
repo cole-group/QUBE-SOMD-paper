@@ -1,0 +1,93 @@
+frag1 
+Energy computed with the  geometric combining rules is:  { E_{ions:ions}^{CLJ} == 0, E_{ions:ions}^{LJ} == 0, E_{ions:ions}^{coulomb} == 0, E_{ions:molecules}^{CLJ} == 0
+  E_{ions:molecules}^{LJ} == 0, E_{ions:molecules}^{coulomb} == 0, E_{molecules-intrabonded}^{1-4[LJ]} == 0, E_{molecules-intrabonded}^{1-4[coulomb]} == 0
+  E_{molecules-intrabonded}^{1-4} == 0, E_{molecules-intrabonded}^{angle} == 92.3179, E_{molecules-intrabonded}^{bend-bend} == 0, E_{molecules-intrabonded}^{bond} == 20.3747
+  E_{molecules-intrabonded}^{dihedral} == 5.4153, E_{molecules-intrabonded}^{improper} == 3.7853, E_{molecules-intrabonded}^{internal} == 121.893, E_{molecules-intrabonded}^{stretch-bend-torsion} == 0
+  E_{molecules-intrabonded}^{stretch-bend} == 0, E_{molecules-intrabonded}^{stretch-stretch} == 0, E_{molecules-intrabonded}^{urey_bradley} == 0, E_{molecules-intranonbonded}^{CLJ} == -1230.56
+  E_{molecules-intranonbonded}^{LJ} == -15.5154, E_{molecules-intranonbonded}^{coulomb} == -1215.05, E_{molecules:molecules}^{CLJ} == 0, E_{molecules:molecules}^{LJ} == 0
+  E_{molecules:molecules}^{coulomb} == 0, E_{restraint}^{restraint} == 0, E_{total} == -1108.67 }
+
+HarmonicBondForce 20.374363740589146
+HarmonicAngleForce 92.31778905223021
+PeriodicTorsionForce 9.200631318539095
+NonbondedForce -1148.6542156503942
+CMMotionRemover 0.0
+CustomNonbondedForce -81.90653930430658
+Total energy -1108.667971
+
+frag2
+Energy computed with the  geometric combining rules is:  { E_{ions:ions}^{CLJ} == 0, E_{ions:ions}^{LJ} == 0, E_{ions:ions}^{coulomb} == 0, E_{ions:molecules}^{CLJ} == 0
+  E_{ions:molecules}^{LJ} == 0, E_{ions:molecules}^{coulomb} == 0, E_{molecules-intrabonded}^{1-4[LJ]} == 0, E_{molecules-intrabonded}^{1-4[coulomb]} == 0
+  E_{molecules-intrabonded}^{1-4} == 0, E_{molecules-intrabonded}^{angle} == 798, E_{molecules-intrabonded}^{bend-bend} == 0, E_{molecules-intrabonded}^{bond} == 180.571
+  E_{molecules-intrabonded}^{dihedral} == 187.22, E_{molecules-intrabonded}^{improper} == 40.3683, E_{molecules-intrabonded}^{internal} == 1206.16, E_{molecules-intrabonded}^{stretch-bend-torsion} == 0
+  E_{molecules-intrabonded}^{stretch-bend} == 0, E_{molecules-intrabonded}^{stretch-stretch} == 0, E_{molecules-intrabonded}^{urey_bradley} == 0, E_{molecules-intranonbonded}^{CLJ} == -15415.1
+  E_{molecules-intranonbonded}^{LJ} == -1021.25, E_{molecules-intranonbonded}^{coulomb} == -14393.8, E_{molecules:molecules}^{CLJ} == 0, E_{molecules:molecules}^{LJ} == 0
+  E_{molecules:molecules}^{coulomb} == 0, E_{restraint}^{restraint} == 0, E_{total} == -14208.9 }
+
+energy from openmm library
+-59450.03555028443 kJ/mol
+HarmonicBondForce 180.57109475363737
+HarmonicAngleForce 798.0015829461938
+PeriodicTorsionForce 227.58502850796933
+NonbondedForce -13847.252927820267
+CMMotionRemover 0.0
+CustomNonbondedForce -1567.8020061543975
+Total energy -14208.897228
+
+frag3
+Energy computed with the  geometric combining rules is:  { E_{ions:ions}^{CLJ} == 0, E_{ions:ions}^{LJ} == 0, E_{ions:ions}^{coulomb} == 0, E_{ions:molecules}^{CLJ} == 0
+  E_{ions:molecules}^{LJ} == 0, E_{ions:molecules}^{coulomb} == 0, E_{molecules-intrabonded}^{1-4[LJ]} == 0, E_{molecules-intrabonded}^{1-4[coulomb]} == 0
+  E_{molecules-intrabonded}^{1-4} == 0, E_{molecules-intrabonded}^{angle} == 128.297, E_{molecules-intrabonded}^{bend-bend} == 0, E_{molecules-intrabonded}^{bond} == 24.4732
+  E_{molecules-intrabonded}^{dihedral} == 63.7504, E_{molecules-intrabonded}^{improper} == 4.0371, E_{molecules-intrabonded}^{internal} == 220.557, E_{molecules-intrabonded}^{stretch-bend-torsion} == 0
+  E_{molecules-intrabonded}^{stretch-bend} == 0, E_{molecules-intrabonded}^{stretch-stretch} == 0, E_{molecules-intrabonded}^{urey_bradley} == 0, E_{molecules-intranonbonded}^{CLJ} == -2431.96
+  E_{molecules-intranonbonded}^{LJ} == -100.293, E_{molecules-intranonbonded}^{coulomb} == -2331.67, E_{molecules:molecules}^{CLJ} == 0, E_{molecules:molecules}^{LJ} == 0
+  E_{molecules:molecules}^{coulomb} == 0, E_{restraint}^{restraint} == 0, E_{total} == -2211.4 }
+
+energy from openmm library
+-9252.510395700223 kJ/mol
+HarmonicBondForce 24.47321765965303
+HarmonicAngleForce 128.29756144127927
+PeriodicTorsionForce 67.78746216520524
+NonbondedForce -2257.799896181883
+CMMotionRemover 0.0
+CustomNonbondedForce -174.16052152732132
+Total energy -2211.402176
+
+frag4
+Energy computed with the  geometric combining rules is:  { E_{ions:ions}^{CLJ} == 0, E_{ions:ions}^{LJ} == 0, E_{ions:ions}^{coulomb} == 0, E_{ions:molecules}^{CLJ} == 0
+  E_{ions:molecules}^{LJ} == 0, E_{ions:molecules}^{coulomb} == 0, E_{molecules-intrabonded}^{1-4[LJ]} == 0, E_{molecules-intrabonded}^{1-4[coulomb]} == 0
+  E_{molecules-intrabonded}^{1-4} == 0, E_{molecules-intrabonded}^{angle} == 67.2027, E_{molecules-intrabonded}^{bend-bend} == 0, E_{molecules-intrabonded}^{bond} == 19.6073
+  E_{molecules-intrabonded}^{dihedral} == 36.7075, E_{molecules-intrabonded}^{improper} == 3.68709, E_{molecules-intrabonded}^{internal} == 127.205, E_{molecules-intrabonded}^{stretch-bend-torsion} == 0
+  E_{molecules-intrabonded}^{stretch-bend} == 0, E_{molecules-intrabonded}^{stretch-stretch} == 0, E_{molecules-intrabonded}^{urey_bradley} == 0, E_{molecules-intranonbonded}^{CLJ} == -1229.11
+  E_{molecules-intranonbonded}^{LJ} == -42.3102, E_{molecules-intranonbonded}^{coulomb} == -1186.8, E_{molecules:molecules}^{CLJ} == 0, E_{molecules:molecules}^{LJ} == 0
+  E_{molecules:molecules}^{coulomb} == 0, E_{restraint}^{restraint} == 0, E_{total} == -1101.9 }
+
+energy from openmm library
+-4610.36239792499 kJ/mol
+HarmonicBondForce 19.607186545377477
+HarmonicAngleForce 67.20277045926446
+PeriodicTorsionForce 40.39474837410746
+NonbondedForce -1134.1027575286805
+CMMotionRemover 0.0
+CustomNonbondedForce -95.00448835967376
+Total energy -1101.902541
+
+whole
+
+energy from openmm library
+-84480.76953202339 kJ/mol
+HarmonicBondForce 245.0258681696642
+HarmonicAngleForce 1085.8196309602056
+PeriodicTorsionForce 344.96787310102474
+NonbondedForce -19655.040033460802
+CMMotionRemover 0.0
+CustomNonbondedForce -2212.1593701451957
+Total energy -20191.386031
+
+{ E_{ions:ions}^{CLJ} == 0, E_{ions:ions}^{LJ} == 0, E_{ions:ions}^{coulomb} == 0, E_{ions:molecules}^{CLJ} == 0
+  E_{ions:molecules}^{LJ} == 0, E_{ions:molecules}^{coulomb} == 0, E_{molecules-intrabonded}^{1-4[LJ]} == 0, E_{molecules-intrabonded}^{1-4[coulomb]} == 0
+  E_{molecules-intrabonded}^{1-4} == 0, E_{molecules-intrabonded}^{angle} == 1085.82, E_{molecules-intrabonded}^{bend-bend} == 0, E_{molecules-intrabonded}^{bond} == 245.026
+  E_{molecules-intrabonded}^{dihedral} == 293.093, E_{molecules-intrabonded}^{improper} == 51.8778, E_{molecules-intrabonded}^{internal} == 1675.81, E_{molecules-intrabonded}^{stretch-bend-torsion} == 0
+  E_{molecules-intrabonded}^{stretch-bend} == 0, E_{molecules-intrabonded}^{stretch-stretch} == 0, E_{molecules-intrabonded}^{urey_bradley} == 0, E_{molecules-intranonbonded}^{CLJ} == -20306.7
+  E_{molecules-intranonbonded}^{LJ} == -1179.37, E_{molecules-intranonbonded}^{coulomb} == -19127.3, E_{molecules:molecules}^{CLJ} == -1560.52, E_{molecules:molecules}^{LJ} == -293.286
+  E_{molecules:molecules}^{coulomb} == -1267.23, E_{restraint}^{restraint} == 0, E_{total} == -20191.4 }
