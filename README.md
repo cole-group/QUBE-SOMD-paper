@@ -28,7 +28,7 @@
 
   *For use with **QUBE**:*
 
-  - Make a "Ligands" folder into which you will copy the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. An example can be found in the 02_Ligand_Setup directory, and a full set of ligand inputs can be found in the "QUBE_inputs" folder above.
+  - Make a "Ligands" folder into which you will copy the QUBE parameterised pdb and xml files for each ligand and the qube_to_prmRst.py script. An example can be found in the 02_Ligand_Setup directory, and a full set of ligand inputs can be found in the "QUBE-FFfiles" folder above.
   - Use the Sire.app python (e.g. ~/sire.app/bin/ipython) to run the following command: ```run ./qube_to_prmRst.py -p FILE.pdb -x FILE.xml```
   - This will produce .rst7 and .prm7 files for each ligand.
   
@@ -89,5 +89,9 @@
 
 5) Once the above is ready, you can start you free energy calculations by running: ```./ligand_lambdarun-comb.sh``` and ```./complex_lambdarun-comb.sh```
 
+
+## Results
+
+In addition to the above instructions for generating the input files for this paper, the Results/ directory also contains the raw data (free energy calculations and single point energy validations of our SOMD implementation.
 
 
