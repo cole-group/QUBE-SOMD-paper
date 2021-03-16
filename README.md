@@ -1,5 +1,7 @@
 ## BioSimSpace protocols and scripts used to generate the input files for FEP calculations. 
 
+The following details the procedure for protein-ligand binding free energy calculations. A separate tutorial on hydration free energy calculations is provided in the directory HFE/.
+
 ## File Setup for Free Energy Calculations
 
 ### 01) Protein setup: 
