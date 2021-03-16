@@ -4,7 +4,7 @@ The following steps are performed automatically using [build_solvated_systems.sh
 ## File Preparation 
 - copy the scripts folder to your desired workplace
 - make a new folder for your target molecule in the same place as the scripts folder and add the QUBE pdb and xml file, these should be named `MOL.pdb` and `MOL.xml`
-- copy the [build_solvated_systems.sh](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/QuBe-SOMD_paper/HFE/scripts/build_solvated_systems.sh) script into this folder and run via `bash build_solvated_systems.sh`
+- copy the [build_solvated_systems.sh](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/build_solvated_systems.sh) script into this folder and run via `bash build_solvated_systems.sh`
 
 Running `tree` should show a directory structure like this
 
