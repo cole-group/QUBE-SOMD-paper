@@ -116,19 +116,19 @@ Running tree again should now give the following structure with the fep director
 Here we explain the steps the scripts follow to prepare the input files in more detail for each phase of the hydration free energy calculations.
 
 - For the vacuum simulations: 
-1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/qube_to_prmRst.py)
+1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/qube_to_prmRst.py)
 3. Generate the MORPH.pert files using the scripts [morph_step1.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/morph_step1.py) and [morph_step2.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/morph_step2.py). These scripts read the parameters of the molecules and return the pert files for the discharge and the vanish steps.
 4. Create the folder architecture and submit the simulations. 
 
 - For the solvated simulations: 
-1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/qube_to_prmRst.py)
-2. Use the BioSimSpace.app python (e.g. ~/biosimspace.app/bin/ipython) to solvate the molecule with [solvate.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/solvate.py):
+1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/qube_to_prmRst.py)
+2. Use the BioSimSpace.app python (e.g. ~/biosimspace.app/bin/ipython) to solvate the molecule with [solvate.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/solvate.py):
 ```
 run ./solvate.py --input MOL.prm7 MOL.rst7 --output MOL_sol --water tip3p --box_dim 26
 ```
 The dimension of the side of the box is in Angstrom. (This might need to be changed)
 
-3. Equilibrate the system with [amberequilibration.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/amberequilibration.py) also with BioSimSpace.
+3. Equilibrate the system with [amberequilibration.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/amberequilibration.py) also with BioSimSpace.
 ```
 run ./amberequilibration.py --input MOL_sol.prm7 MOL_sol.rst7 --output MOL
 ```
