@@ -1,5 +1,5 @@
-Here are the instructions to run automated Hydration Free Energy calculations using the QuBe FF.
-The following steps are done automatically using [build_solvated_systems.sh](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/build_solvated_systems.sh) and will produce simulation ready input files for both SOMD and Gromacs.
+Here are the instructions to run automated Hydration Free Energy calculations using the QUBE force field.
+The following steps are performed automatically using [build_solvated_systems.sh](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/build_solvated_systems.sh) and will produce simulation ready input files for both SOMD and Gromacs.
 
 ## File Preparation 
 - copy the scripts folder to your desired workplace
