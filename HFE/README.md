@@ -3,8 +3,8 @@ The following steps are performed automatically using [build_solvated_systems.sh
 
 ## File Preparation 
 - copy the scripts folder to your desired workplace
-- make a new folder for your target molecule in the same place as the scripts folder and add the QuBe pdb and xml file, these should be named `MOL.pdb` and `MOL.xml`
-- copy the [build_solvated_systems.sh](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/build_solvated_systems.sh) script into this folder and run via `bash build_solvated_systems.sh`
+- make a new folder for your target molecule in the same place as the scripts folder and add the QUBE pdb and xml file, these should be named `MOL.pdb` and `MOL.xml`
+- copy the [build_solvated_systems.sh](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/QuBe-SOMD_paper/HFE/scripts/build_solvated_systems.sh) script into this folder and run via `bash build_solvated_systems.sh`
 
 Running `tree` should show a directory structure like this
 
@@ -112,28 +112,28 @@ Running tree again should now give the following structure with the fep director
 
 ```
 
-##Script details
+##Script details##
 Here we explain the steps the scripts follow to prepare the input files in more detail for each phase of the hydration free energy calculations.
 
 - For the vacuum simulations: 
-1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py)
-3. Generate the MORPH.pert files using the scripts [morph_step1.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/morph_step1.py) and [morph_step2.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/morph_step2.py). These scripts read the parameters of the molecules and return the pert files for the discharge and the vanish steps.
+1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/qube_to_prmRst.py)
+3. Generate the MORPH.pert files using the scripts [morph_step1.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/morph_step1.py) and [morph_step2.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/morph_step2.py). These scripts read the parameters of the molecules and return the pert files for the discharge and the vanish steps.
 4. Create the folder architecture and submit the simulations. 
 
 - For the solvated simulations: 
-1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py)
-2. Use the BioSimSpace.app python (e.g. ~/biosimspace.app/bin/ipython) to solvate the molecule with [solvate.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/solvate.py):
+1. Starting with the pdb/xml files of the ligands, generate the corresponding amber files (prm7/rst7) using [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/qube_to_prmRst.py)
+2. Use the BioSimSpace.app python (e.g. ~/biosimspace.app/bin/ipython) to solvate the molecule with [solvate.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/solvate.py):
 ```
 run ./solvate.py --input MOL.prm7 MOL.rst7 --output MOL_sol --water tip3p --box_dim 26
 ```
-The dimension of the side of the box is in A. (This might need to be changed)
+The dimension of the side of the box is in Angstrom. (This might need to be changed)
 
-3. Equilibrate the system with [amberequilibration.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/amberequilibration.py) also with BioSimSpace.
+3. Equilibrate the system with [amberequilibration.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/FEP_preparation/amberequilibration.py) also with BioSimSpace.
 ```
 run ./amberequilibration.py --input MOL_sol.prm7 MOL_sol.rst7 --output MOL
 ```
 From this point on, the process is the same as the one for the molecules in vacuum:
-5. Generate the MORPH.pert files using the scripts [morph_step1.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/morph_step1.py) and [morph_step2.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/HFE/scripts/morph_step2.py).
+5. Generate the MORPH.pert files using the scripts [morph_step1.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/morph_step1.py) and [morph_step2.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/HFE/scripts/morph_step2.py).
 6. Create the folder architecture and submit the simulations.
 
 Analysis: 
@@ -144,7 +144,7 @@ Corrections:
 - `FUNC.py`: Evaluates the electrostatic correction for the free energy change: FUNC_corr. This is run for lambda= 0 at the discharge leg.
 - `~/sire.app/bin/lj-tailcorrection -C sim.cfg -l <lambda> -b 1.00 -r traj000000001.dcd -s 20` Evaluates the end-point correction for the truncated vdW potentials. This is run for lambda= 0 and lambda= 1 of the vanish leg. 
 
-DG_LJCOR = (LJ correction at lambda 1.0 ) - (LJ correction at lambda 0.0) )
+DG_LJCOR = (LJ correction at lambda 1.0 ) - (LJ correction at lambda 0.0)
 
 To derive the hydration free energy, we use the following formula:
 
