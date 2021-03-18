@@ -1,0 +1,9 @@
+REMARK   1 CREATED WITH QUBEKit 2021-03-03 11:26:50.851522
+COMPND    MOL
+HETATM    1  C0  MOL     1       1.092   0.029  -0.004  1.00  0.00           C
+HETATM    2  H1  MOL     1       2.185   0.027  -0.019  1.00  0.00           H
+HETATM    3  H2  MOL     1       0.720  -0.857  -0.523  1.00  0.00           H
+HETATM    4  H3  MOL     1       0.723   0.926  -0.505  1.00  0.00           H
+HETATM    5  H4  MOL     1       0.743   0.019   1.030  1.00  0.00           H
+CONECT    1    2    3    4    5
+END

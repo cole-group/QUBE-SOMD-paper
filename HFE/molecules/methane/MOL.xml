@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<ForceField>
+<AtomTypes>
+<Type class="C0" element="C" mass="12.011" name="QUBE_0"/>
+<Type class="H1" element="H" mass="1.008" name="QUBE_1"/>
+<Type class="H2" element="H" mass="1.008" name="QUBE_2"/>
+<Type class="H3" element="H" mass="1.008" name="QUBE_3"/>
+<Type class="H4" element="H" mass="1.008" name="QUBE_4"/>
+</AtomTypes>
+<Residues>
+<Residue name="MOL">
+<Atom name="C0" type="QUBE_0"/>
+<Atom name="H1" type="QUBE_1"/>
+<Atom name="H2" type="QUBE_2"/>
+<Atom name="H3" type="QUBE_3"/>
+<Atom name="H4" type="QUBE_4"/>
+<Bond from="0" to="1"/>
+<Bond from="0" to="2"/>
+<Bond from="0" to="3"/>
+<Bond from="0" to="4"/>
+</Residue>
+</Residues>
+<HarmonicBondForce>
+<Bond class1="C0" class2="H1" k="277392.890447" length="0.109065"/>
+<Bond class1="C0" class2="H2" k="277392.890447" length="0.109065"/>
+<Bond class1="C0" class2="H3" k="277392.890447" length="0.109065"/>
+<Bond class1="C0" class2="H4" k="277392.890447" length="0.109065"/>
+</HarmonicBondForce>
+<HarmonicAngleForce>
+<Angle angle="1.910633" class1="H1" class2="C0" class3="H2" k="234.203876"/>
+<Angle angle="1.910633" class1="H1" class2="C0" class3="H3" k="234.203876"/>
+<Angle angle="1.910633" class1="H1" class2="C0" class3="H4" k="234.203876"/>
+<Angle angle="1.910633" class1="H2" class2="C0" class3="H3" k="234.203876"/>
+<Angle angle="1.910633" class1="H2" class2="C0" class3="H4" k="234.203876"/>
+<Angle angle="1.910633" class1="H3" class2="C0" class3="H4" k="234.203876"/>
+</HarmonicAngleForce>
+<PeriodicTorsionForce/>
+<NonbondedForce combination="opls" coulomb14scale="0.5" lj14scale="0.5">
+<Atom charge="-0.497931" epsilon="0.259187" sigma="0.362619" type="QUBE_0"/>
+<Atom charge="0.124483" epsilon="0.150473" sigma="0.238609" type="QUBE_1"/>
+<Atom charge="0.124483" epsilon="0.150473" sigma="0.238609" type="QUBE_2"/>
+<Atom charge="0.124483" epsilon="0.150473" sigma="0.238609" type="QUBE_3"/>
+<Atom charge="0.124482" epsilon="0.150473" sigma="0.238609" type="QUBE_4"/>
+</NonbondedForce>
+</ForceField>
