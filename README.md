@@ -13,7 +13,7 @@ The following details the procedure for protein-ligand binding free energy calcu
   - Combine the protein fragments to get the whole protein: ```run ./combine.py --system1 FILE_1.prm7 FILE_1.rst7 --system2 FILE_2.prm7 FILE_2.rst7 --output FILE_12``` (The combining process is done three times to combine the four fragments together.)
   
   *For use with **QUBE**:*
-  - Given the four fragments of the protein in xml and pdb format, we are going to use the [qube_to_prmRst.py](https://github.com/cole-group/qube_project/blob/master/QuBe-SOMD_paper/FEP_preparation/qube_to_prmRst.py) to read the xml/pdb files and generate the corresponding amber files for each fragment:
+  - Given the four fragments of the protein in xml and pdb format, we are going to use the [qube_to_prmRst.py](https://github.com/cole-group/QUBE-SOMD-paper/blob/master/qube_to_prmRst.py) to read the xml/pdb files and generate the corresponding amber files for each fragment:
   - Use the Sire python to run the following command: ```~/sire.app/bin/ipython qube_to_prmRst.py -x fragX.xml -p fragX.pdb```
   - This will produce AMBER parameterised .rst7 and .prm7 files for each protein fragment.
   - The combining process to get the whole protein is the same as the one we did for the amber parameterisation:
@@ -82,7 +82,7 @@ The following details the procedure for protein-ligand binding free energy calcu
   - This list details the perturbations you wish to simulate and should include only numbers (*e.g.* 1-2, 2-1 not, Lig1-Lig2 etc.)
 
 3) The lambda.cfg file
-  - Configuration files for both our AMBER and QUBE runs can be found in the [Parameters](https://github.com/cole-group/qube_project/tree/master/QuBe-SOMD_paper/FEP_preparation/Parameters) folder. 
+  - Configuration files for both our AMBER and QUBE runs can be found in the [Parameters](https://github.com/cole-group/QUBE-SOMD-paper/tree/master/Parameters) folder. 
   - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
 
 4) The ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh``` scripts
