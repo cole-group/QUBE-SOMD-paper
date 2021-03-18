@@ -112,7 +112,7 @@ Running tree again should now give the following structure with the fep director
 
 ```
 
-##Script details##
+## Script details
 Here we explain the steps the scripts follow to prepare the input files in more detail for each phase of the hydration free energy calculations.
 
 - For the vacuum simulations: 
