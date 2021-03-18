@@ -82,7 +82,7 @@ The following details the procedure for protein-ligand binding free energy calcu
   - This list details the perturbations you wish to simulate and should include only numbers (*e.g.* 1-2, 2-1 not, Lig1-Lig2 etc.)
 
 3) The lambda.cfg file
-  - Configuration files for both our AMBER and QUBE runs can be found in the [Parameters](https://github.com/cole-group/QUBE-SOMD-paper/tree/master/Parameters) folder. 
+  - Configuration files for both our AMBER and QUBE runs can be found in the Parameters/ folder. 
   - There are various parameters which can be altered in these files, namely the number of moves and cycles, the timestep, the type of constraints, the lambda windows used and the platform on which to run the calculation. 
 
 4) The ```ligand_lambdarun-comb.sh``` and ```complex_lambdarun-comb.sh``` scripts
