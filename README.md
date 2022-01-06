@@ -1,5 +1,7 @@
 ## BioSimSpace protocols and scripts used to generate the input files for FEP calculations. 
 
+These data/tutorials accompany the paper: [Nelson L, Bariami S, Ringrose C, Horton JT, Kurdekar V, Mey ASJS, Michel J, Cole DJ. Implementation of the QUBE force field in SOMD for high-throughput alchemical free energy calculations, Journal of Chemical Information and Modeling, 2021, 61, 2124-2130.](https://doi.org/10.1021/acs.jcim.1c00328)
+
 The following details the procedure for protein-ligand binding free energy calculations. A separate tutorial on hydration free energy calculations is provided in the directory HFE/.
 
 ## File Setup for Free Energy Calculations
